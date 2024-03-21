@@ -47,8 +47,9 @@ export const Experiences = () => {
                   <Image
                     src={experience.image}
                     alt={experience.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill // Updated usage for Next.js 13
+                    sizes="(max-width: 768px) 100vw, 50vw" // Example sizes value
+                    style={{ objectFit: "cover" }} // Applying objectFit via style if needed
                   />
                 </div>
               )}

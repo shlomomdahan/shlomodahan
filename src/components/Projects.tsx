@@ -59,8 +59,10 @@ export const Projects = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    layout="fill"
-                    objectFit="cover"
+                    // layout="fill"
+                    fill // Updated usage for Next.js 13
+                    sizes="(max-width: 768px) 100vw, 50vw" // Example sizes value
+                    style={{ objectFit: "cover" }} // Applying objectFit via style if needed
                   />
                 </div>
               )}
