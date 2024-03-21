@@ -1,41 +1,43 @@
-import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { MdFormatAlignJustify } from "react-icons/md";
+import Separator from "./Separator";
 
 export const Intro = () => {
   return (
-    <div
-      className="flex justify-left  "
-      style={{ fontFamily: "Montserrat, sans-serif" }}
-    >
-      <div className="w-full">
-        <div className=" text-base sm:text-2xl md:mb-6 md:mt-6 text-left">
-          👋 Hey there, I'm
+    <div className="w-1/3 p-1 mt-10 mx-auto mb-20">
+      <div className="w-full flex flex-col items-center">
+        <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-xl">
+          👋 Hello, I'm
         </div>
-        <div className="font-bold text-4xl sm:text-5xl md:text-6xl mb-6 text-gray-500 text-left text-gradient">
+        <div className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-500 text-gradient text-center">
           Shlomo Dahan
         </div>
 
-        <hr className="w-full bg-gray-300 my-2 mx-auto mb-6 h-0.5" />
+        <Separator />
 
-        <p className="text-2xl mb-10 text-left">
-          Currently a CS student @UPenn
-        </p>
-
-        <div className="flex justify-start gap-8">
+        <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
           <a
             href="https://linkedin.com/in/yourusername"
-            className="text-blue-500 hover:text-blue-700"
+            className="text-blue-500 hover:text-blue-700 flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedinIn size={30} />
+            <FaLinkedinIn className="h-6 w-6 " />
           </a>
           <a
             href="https://github.com/yourusername"
-            className="text-gray-900 hover:text-black"
+            className="text-gray-900 hover:text-black flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={30} />
+            <FaGithub className="h-6 w-6 " />
+          </a>
+          <a
+            className="font-medium bg-gray-300 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
+            href="/CV.pdf"
+            download
+          >
+            CV <MdFormatAlignJustify />
           </a>
         </div>
       </div>
