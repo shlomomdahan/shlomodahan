@@ -13,7 +13,8 @@ export const Intro = () => {
           Shlomo Dahan
         </div>
 
-        <Separator />
+        {/* <Separator /> */}
+        <hr className="w-full bg-gray-300 bg-opacity-70 mb-5 h-1 rounded-full" />
 
         <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
           <a
