@@ -25,7 +25,7 @@ export const Experiences = () => {
   const isExpanded = visibleExperiences === experienceData.length;
 
   return (
-    <div className="w-full p-1 mx-5 mb-20">
+    <div className="w-full p-1 mb-20">
       <h1 className="text-3xl font-bold mb-5">Experiences</h1>
       <Separator />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
