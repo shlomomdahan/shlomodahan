@@ -28,7 +28,8 @@ export const Experiences = () => {
     <div className="w-full p-1 mb-20">
       <h1 className="text-3xl font-bold mb-5">Experiences</h1>
       <Separator />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 3.5xl:grid-cols-4 gap-10">
         {experienceData.slice(0, visibleExperiences).map((experience) => (
           <div
             key={experience.id}
