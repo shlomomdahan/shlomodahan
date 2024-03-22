@@ -35,8 +35,7 @@ export const Intro = () => {
           </a>
           <a
             className="font-medium bg-gray-300 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
-            href="/CV.pdf"
-            download
+            href="cv.shlomodahan.com"
           >
             CV <MdFormatAlignJustify />
           </a>
