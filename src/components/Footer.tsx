@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <h5 className="text-xl font-semibold mb-6">Let's Get in Touch:</h5>
+        <h5 className="text-xl font-semibold mb-6">{"Let's Get in Touch:"}</h5>
         <div className="relative flex items-center justify-center">
           <input
             ref={inputEl}

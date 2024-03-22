@@ -7,7 +7,7 @@ export const Intro = () => {
     <div className="w-1/3 p-1 mt-10 mx-auto mb-20">
       <div className="w-full flex flex-col items-center">
         <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-xl">
-          👋 Hello, I'm
+          {"👋 Hello, I'm"}
         </div>
         <div className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-500 text-gradient text-center">
           Shlomo Dahan
