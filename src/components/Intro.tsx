@@ -1,6 +1,7 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdFormatAlignJustify } from "react-icons/md";
 import Separator from "./Separator";
+import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
   return (
@@ -18,7 +19,7 @@ export const Intro = () => {
 
         <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/shlomomoshedahan"
             className="text-blue-500 hover:text-blue-700 flex items-center"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +27,7 @@ export const Intro = () => {
             <FaLinkedinIn className="h-6 w-6 " />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/shlomomdahan"
             className="text-gray-900 hover:text-black flex items-center"
             target="_blank"
             rel="noopener noreferrer"
@@ -34,10 +35,11 @@ export const Intro = () => {
             <FaGithub className="h-6 w-6 " />
           </a>
           <a
-            className="font-medium bg-gray-300 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
-            href="cv.shlomodahan.com"
+            className="font-medium text-white bg-gray-400 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
+            href="/cv.pdf"
+            download
           >
-            CV <MdFormatAlignJustify />
+            CV <HiDownload />
           </a>
         </div>
       </div>
