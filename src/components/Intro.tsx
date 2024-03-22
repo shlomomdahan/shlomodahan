@@ -9,7 +9,7 @@ export const Intro = () => {
         <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-xl">
           {"👋 Hello, I'm"}
         </div>
-        <div className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-500 text-gradient text-center">
+        <div className="font-bold text-5xl lg:text-6xl mb-6 text-gray-500 text-gradient text-center">
           Shlomo Dahan
         </div>
 
