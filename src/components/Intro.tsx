@@ -6,15 +6,15 @@ export const Intro = () => {
   return (
     <div className="w-1/3 p-1 mt-10 mx-auto mb-20">
       <div className="w-full flex flex-col items-center">
-        <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-xl">
+        <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-2xl">
           {"👋 Hello, I'm"}
         </div>
-        <div className="font-bold text-5xl lg:text-6xl mb-6 text-gray-500 text-gradient text-center">
+        <div className="font-bold text-5xl lg:text-6xl mb-4 text-gray-500 text-gradient text-center">
           Shlomo Dahan
         </div>
 
         {/* <Separator /> */}
-        <hr className="w-full bg-gray-300 bg-opacity-70 mb-5 h-1 rounded-full" />
+        {/* <hr className="w-full bg-gray-300 bg-opacity-70 mb-5 h-1 rounded-full" /> */}
 
         <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
           <a
