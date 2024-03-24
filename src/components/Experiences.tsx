@@ -54,7 +54,7 @@ export const Experiences = () => {
                   />
                 </div>
               )}
-              <h3 className="text-md mb-4">{experience.date}</h3>
+              <h3 className="text-md mb-4 font-semibold">{experience.date}</h3>
               <p className="mb-4">{experience.description}</p>
             </div>
           </div>

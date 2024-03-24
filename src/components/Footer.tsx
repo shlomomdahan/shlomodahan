@@ -43,12 +43,12 @@ export const Footer: React.FC = () => {
             readOnly
             style={{ position: "absolute", left: "-9999px" }}
           />
-          <div className="flex flex-row min-w-80 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1">
+          <div className="flex flex-row min-w-80 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1 shadow-lg">
             shlomomdahan@gmail.com
             <button
               onClick={handleCopyClick}
-              className="bg-purple-500 rounded-lg p-2 relative" // Ensure button is positioned relatively for the absolute positioning of the copied message
-              style={{ width: "30px", height: "30px" }}
+              className="bg-purple-500 rounded-lg p-1 relative" // Ensure button is positioned relatively for the absolute positioning of the copied message
+              style={{ width: "20px", height: "30px" }}
             >
               <Image src="/images/copy.png" alt="Copy" width={20} height={20} />
               {copied && (
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
                 "_blank"
               )
             }
-            className="text-blue-500 cursor-pointer bg-white rounded-lg h-12 p-2"
+            className="text-blue-500 cursor-pointer bg-white rounded-lg h-12 p-2 shadow-lg"
             size={55}
           />
         </div>

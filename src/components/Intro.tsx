@@ -35,7 +35,7 @@ export const Intro = () => {
             <FaGithub className="h-6 w-6 " />
           </a>
           <a
-            className="font-medium text-white bg-gray-400 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
+            className="font-medium shadow-md text-white bg-gray-400 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
             href="/cv.pdf"
             download
           >
