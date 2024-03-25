@@ -21,6 +21,16 @@ export const projectsData: ReadonlyArray<Project> = [
     live: true,
   },
   {
+    id: 7,
+    title: "Game of Life",
+    description: "A web app that simulates Conway's Game of Life",
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    link: "https://game-of-life-gray-gamma.vercel.app/",
+    github: "https://github.com/shlomomdahan/game-of-life",
+    image: "/images/life.gif",
+    live: true,
+  },
+  {
     id: 3,
     title: "Pathfinding Visualizer",
     description: "A web app that visualizes pathfinding algorithms",
