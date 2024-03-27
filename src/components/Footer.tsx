@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
           {"Let's Get in Touch:"}
         </h5> */}
         <h5 className="text-xl font-semibold mb-6 bg-clip-text text-transparent py-2 drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
-          Let's Get in Touch:
+          {"Let's Get in Touch"}
         </h5>
         <div className="relative flex items-center justify-center">
           <input
