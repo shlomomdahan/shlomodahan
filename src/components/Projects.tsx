@@ -27,13 +27,16 @@ export const Projects = () => {
 
   return (
     <div className="w-full p-1 mb-20">
-      <h1 className="text-3xl font-bold mb-5">Projects</h1>
+      <h1 className="sm:text-4xl text-3xl font-bold mb-5 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+        Projects
+      </h1>
+
       <Separator />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 3.5xl:grid-cols-4 gap-10">
         {projectsData.slice(0, visibleProjects).map((project) => (
           <div
             key={project.id}
-            className="flex flex-col shadow-xl rounded-lg bg-white h-full"
+            className="flex flex-col shadow-xl rounded-lg bg-white bg-opacity-30 h-full"
           >
             <div className="p-6 flex-grow">
               {" "}
@@ -41,7 +44,7 @@ export const Projects = () => {
                 href={project.link ? project.link : undefined} // Only set href if project.link exists
                 target="_blank"
                 rel="noopener noreferrer" // Always good practice for external links
-                className={`inline-flex items-center gap-1 font-bold text-xl mb-2 ${
+                className={`inline-flex items-center gap-1 text-gray-100 font-bold text-xl mb-2 ${
                   project.link ? "hover:underline" : "" // Conditionally apply hover:underline
                 }`}
               >
@@ -67,12 +70,12 @@ export const Projects = () => {
                 </div>
               )}
               <div className="mt-4">
-                <p className="mb-4">{project.description}</p>
+                <p className="mb-4 text-white">{project.description}</p>
                 {/* <span className="font-semibold">Technologies Used: </span> */}
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                   {project.technologies.map((tag, index) => (
                     <li
-                      className="bg-blue-300 bg-opacity-75 px-3 py-1 text-gray-900 text-xs rounded-full shadow-lg"
+                      className="bg-gray-100 bg-opacity-75 px-3 py-1 text-black font-medium text-xs rounded-full shadow-lg"
                       key={index}
                     >
                       {tag}
@@ -90,7 +93,7 @@ export const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-2xl text-gray-800 hover:text-black" />{" "}
+                  <FaGithub className="text-2xl text-gray-100 hover:text-black" />{" "}
                   {/* GitHub Icon */}
                 </a>
               )}

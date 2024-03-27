@@ -26,17 +26,19 @@ export const Experiences = () => {
 
   return (
     <div className="w-full p-1 mb-20">
-      <h1 className="text-3xl font-bold mb-5">Experiences</h1>
+      <h1 className="sm:text-4xl text-3xl font-bold mb-5 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+        Experiences
+      </h1>
       <Separator />
       <div></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 3.5xl:grid-cols-4 gap-10">
         {experienceData.slice(0, visibleExperiences).map((experience) => (
           <div
             key={experience.id}
-            className="flex flex-col shadow-xl rounded-lg bg-white h-full"
+            className="flex flex-col shadow-xl rounded-lg bg-white bg-opacity-30 h-full"
           >
             <div className="p-6 flex-grow">
-              <h2 className="font-bold text-xl mb-2">
+              <h2 className="font-bold text-xl mb-2 text-gray-100">
                 {experience.title} at {experience.company}
               </h2>
               <hr className="w-full bg-gray-300 mb-5 h-0.5" />
@@ -54,8 +56,10 @@ export const Experiences = () => {
                   />
                 </div>
               )}
-              <h3 className="text-md mb-4 font-semibold">{experience.date}</h3>
-              <p className="mb-4">{experience.description}</p>
+              <h3 className="text-md mb-4 font-semibold text-gray-100">
+                {experience.date}
+              </h3>
+              <p className="mb-4 text-gray-100">{experience.description}</p>
             </div>
           </div>
         ))}

@@ -16,7 +16,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`text-white bg-purple-500 bg-opacity-70 shadow-xl px-3 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer ${className}`}
+      className={`text-white bg-white bg-opacity-30 shadow-xl px-3 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer ${className}`}
     >
       {buttonText}
     </button>

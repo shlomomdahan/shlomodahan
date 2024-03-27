@@ -62,7 +62,7 @@ export const projectsData: ReadonlyArray<Project> = [
     id: 1,
     title: "shlomodahan.com",
     description: "Personal Website built with Next.js and Tailwind CSS",
-    technologies: ["React", "Next.js", "Tailwind CSS"],
+    technologies: ["React", "Next.js", "Tailwind CSS", "Aceternity UI"],
     link: "https://www.shlomodahan.com",
     github: "https://github.com/shlomomdahan/shlomodahan",
     image: "/images/shlomo.png", // Updated path

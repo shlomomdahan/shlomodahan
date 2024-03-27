@@ -5,41 +5,46 @@ import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
   return (
-    <div className="w-1/3 p-1 mt-10 mx-auto mb-20">
+    <div className="w-2/3 p-1 mt-10 mx-auto mb-10">
       <div className="w-full flex flex-col items-center">
-        <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-2xl">
+        {/* <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-2xl">
           {"👋 Hello, I'm"}
-        </div>
-        <div className="font-bold text-5xl lg:text-6xl mb-4 text-gray-500 text-gradient text-center">
-          Shlomo Dahan
+        </div> */}
+        <div className="mb-5 z-50 inset-0 text-white font-bold px-4 text-xl text-center md:text-2xl lg:text-4xl">
+          <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+            {"👋 Hello, I'm"}
+          </p>
         </div>
 
-        {/* <Separator /> */}
-        {/* <hr className="w-full bg-gray-300 bg-opacity-70 mb-5 h-1 rounded-full" /> */}
+        <div className="mb-5 z-50 inset-0  text-white font-bold px-4 text-3xl text-center md:text-4xl lg:text-7xl">
+          <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+            {"Shlomo Dahan"}
+          </p>
+        </div>
 
         <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
           <a
             href="https://linkedin.com/in/shlomomoshedahan"
-            className="text-blue-500 hover:text-blue-700 flex items-center"
+            className="text-gray-100 hover:text-blue-500 flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedinIn className="h-6 w-6 " />
+            <FaLinkedinIn className="h-8 w-8 sm:h-10 sm:w-10" />
           </a>
           <a
             href="https://github.com/shlomomdahan"
-            className="text-gray-900 hover:text-black flex items-center"
+            className="text-white hover:text-purple-500 flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="h-6 w-6 " />
+            <FaGithub className="h-8 w-8 sm:h-10 sm:w-10" />
           </a>
           <a
-            className="font-medium shadow-md text-white bg-gray-400 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
             href="/cv.pdf"
             download
+            className="flex items-center justify-center h-8 w-10 sm:h-10 sm:w-16 rounded-full shadow-md bg-gray-100 text-black font-bold p-2"
           >
-            CV <HiDownload />
+            CV <HiDownload className="text-xl" />
           </a>
         </div>
       </div>

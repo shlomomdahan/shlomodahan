@@ -24,8 +24,12 @@ export const Footer: React.FC = () => {
   return (
     <div className="py-16 mx-5 text-gray-700 flex flex-col">
       <div className="text-center mb-6">
-        <div className="flex justify-center items-center mb-8">
-          <h1 className="text-6xl font-bold text-gray-900 mr-3">Bye!</h1>
+        <div className="flex justify-center items-center mb-4">
+          <div className="inset-0  text-white font-bold px-4 text-3xl text-center md:text-4xl lg:text-7xl">
+            <p className="bg-clip-text text-transparent py-2 drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+              {"Bye!"}
+            </p>
+          </div>
           <div className="waveHand">
             <Image
               src="/images/hand.png"
@@ -35,7 +39,12 @@ export const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <h5 className="text-xl font-semibold mb-6">{"Let's Get in Touch:"}</h5>
+        {/* <h5 className="text-xl text-white font-semibold mb-6">
+          {"Let's Get in Touch:"}
+        </h5> */}
+        <h5 className="text-xl font-semibold mb-6 bg-clip-text text-transparent py-2 drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+          Let's Get in Touch:
+        </h5>
         <div className="relative flex items-center justify-center">
           <input
             ref={inputEl}
@@ -43,7 +52,7 @@ export const Footer: React.FC = () => {
             readOnly
             style={{ position: "absolute", left: "-9999px" }}
           />
-          <div className="flex flex-row min-w-80 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1 shadow-lg">
+          <div className="flex flex-row min-w-80 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1 shadow-2xl">
             shlomomdahan@gmail.com
             <button
               onClick={handleCopyClick}
@@ -65,7 +74,7 @@ export const Footer: React.FC = () => {
                 "_blank"
               )
             }
-            className="text-blue-500 cursor-pointer bg-white rounded-lg h-12 p-2 shadow-lg"
+            className="text-blue-500 cursor-pointer hover:bg-blue-300 bg-white rounded-lg h-12 p-2 shadow-2xl"
             size={55}
           />
         </div>
