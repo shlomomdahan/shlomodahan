@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image"; // Importing next/image
+import Image from "next/image";
 import Separator from "./Separator";
 import { projectsData } from "@/lib/data";
 import { FaGithub, FaGlobe } from "react-icons/fa";
