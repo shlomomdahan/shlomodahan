@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="min-h-screen py-10 px-20 absolute z-[-2] bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,#c3dbfa_100%)]">
+      <main className="min-h-screen w-full py-10 px-20 absolute z-[-2] bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,#c3dbfa_100%)]">
         <Intro />
         <Projects />
         <Experiences />

@@ -22,9 +22,6 @@ interface Project {
 
 export const Projects: React.FC = () => {
   const { visibleItems, showMore, showLess, isExpanded } = useToggleDisplay({
-    breakpoint: 768,
-    initialLarge: 3,
-    initialSmall: 1,
     dataLength: projectsData.length,
   });
 
@@ -49,7 +46,7 @@ export const Projects: React.FC = () => {
         </a>
         <hr className="w-full bg-gray-300 mb-5 h-0.5" />
         {project.image && (
-          <div className="relative hidden md:block md:w-full md:h-60 lg:h-72 xl:h-80 2xl:h-96 mb-4 rounded-lg overflow-hidden shadow-xl">
+          <div className="relative w-full h-60 lg:h-72 xl:h-80 2xl:h-96 mb-4 rounded-lg overflow-hidden shadow-xl">
             <Image
               src={project.image}
               alt={project.title}

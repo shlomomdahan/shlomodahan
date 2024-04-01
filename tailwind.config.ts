@@ -1,36 +1,5 @@
 import type { Config } from "tailwindcss";
 
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{ts,tsx}"],
-  darkMode: "class",
-  theme: {
-    // rest of the code
-  },
-  plugins: [
-    // rest of the code
-    addVariablesForColors,
-  ],
-};
-
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-  addBase({
-    ":root": newVars,
-  });
-}
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -45,9 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        "2.5xl": "1680px", // Custom breakpoint for screens wider than 1680px
+        "2.5xl": "1400px", // Custom breakpoint for screens wider than 1680px
         "3xl": "1920px", // Custom breakpoint for screens wider than 1920px
-        "3.5xl": "2600px", // Custom breakpoint for "3.5xl"
+        "3.5xl": "2400px", // Custom breakpoint for "3.5xl"
       },
     },
   },

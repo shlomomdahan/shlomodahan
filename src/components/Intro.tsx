@@ -36,7 +36,7 @@ export const Intro = () => {
           </a>
           <a
             className="font-medium shadow-md text-white bg-gray-400 bg-opacity-75 h-9 px-3 flex items-center  rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer "
-            href="/cv.pdf"
+            href="/Shlomo_Dahan_Resume.pdf"
             download
           >
             CV <HiDownload />
