@@ -36,14 +36,14 @@ export const Footer: React.FC = () => {
           </div>
         </div>
         <h5 className="text-xl font-semibold mb-6">{"Let's Get in Touch:"}</h5>
-        <div className="relative flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <input
             ref={inputEl}
             value="shlomomdahan@gmail.com"
             readOnly
             style={{ position: "absolute", left: "-9999px" }}
           />
-          <div className="flex flex-row min-w-80 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1 shadow-lg">
+          <div className="flex flex-row min-w-72 w-1/4 items-center justify-between bg-white rounded-lg px-3 h-12 mr-1 shadow-lg">
             shlomomdahan@gmail.com
             <button
               onClick={handleCopyClick}
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
                 "_blank"
               )
             }
-            className="text-blue-500 cursor-pointer bg-white rounded-lg h-12 p-2 shadow-lg"
+            className="text-blue-500 cursor-pointer bg-white rounded-lg h-12 p-2 shadow-lg min-w-12"
             size={55}
           />
         </div>

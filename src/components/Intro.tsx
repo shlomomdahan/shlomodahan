@@ -5,7 +5,7 @@ import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
   return (
-    <div className="w-1/3 p-1 mt-10 mx-auto mb-20">
+    <div className="w-1/3 p-1 mt-1 sm:mt-10 mx-auto mb-16 sm:mb-20">
       <div className="w-full flex flex-col items-center">
         <div className="text-gray-600 text-center mb-4 hidden sm:block sm:text-2xl">
           {"👋 Hello, I'm"}
@@ -17,7 +17,7 @@ export const Intro = () => {
         {/* <Separator /> */}
         {/* <hr className="w-full bg-gray-300 bg-opacity-70 mb-5 h-1 rounded-full" /> */}
 
-        <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
+        <div className="flex justify-center gap-6 sm:gap-8 md:gap-10 mt-4">
           <a
             href="https://linkedin.com/in/shlomomoshedahan"
             className="text-blue-500 hover:text-blue-700 flex items-center"

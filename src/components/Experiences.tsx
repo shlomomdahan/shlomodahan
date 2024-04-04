@@ -33,7 +33,7 @@ export const Experiences: React.FC = () => {
         <hr className="w-full bg-gray-300 mb-5 h-0.5" />
         {experience.image && (
           <div
-            className="relative w-full h-60 lg:h-72 xl:h-80 2xl:h-96 mb-4 rounded-lg overflow-hidden shadow-xl"
+            className="relative w-full hidden sm:block h-60 lg:h-72 xl:h-80 2xl:h-96 mb-4 rounded-lg overflow-hidden shadow-xl"
             style={{ width: "100%", height: "300px" }}
           >
             <Image
