@@ -11,6 +11,26 @@ interface Project {
 
 export const projectsData: ReadonlyArray<Project> = [
   {
+    id: 3,
+    title: "Pathfinding Visualizer",
+    description: "A web app that visualizes pathfinding algorithms",
+    technologies: ["React", "Tailwind CSS"],
+    link: "https://pathfinding-visualizer-phi.vercel.app/",
+    github: "https://github.com/shlomomdahan/pathfinding-visualizer",
+    image: "/images/pathfinder.gif",
+    live: true,
+  },
+  {
+    id: 4,
+    title: "VeriCreds",
+    description: "web3 document sharing app created for Hackathon",
+    technologies: ["React", "Next.js", "Redux", "Axios", "PyMongo", "Flask"],
+    github: "https://github.com/shlomomdahan/VeriCreds",
+    image: "/images/vericreds.jpg",
+    link: "https://devpost.com/software/vericreds",
+    live: false,
+  },
+  {
     id: 2,
     title: "Sorting Visualizer",
     description: "A web app that visualizes sorting algorithms",
@@ -30,34 +50,7 @@ export const projectsData: ReadonlyArray<Project> = [
     image: "/images/life.gif",
     live: true,
   },
-  {
-    id: 3,
-    title: "Pathfinding Visualizer",
-    description: "A web app that visualizes pathfinding algorithms",
-    technologies: ["React", "Tailwind CSS"],
-    link: "https://pathfinding-visualizer-phi.vercel.app/",
-    github: "https://github.com/shlomomdahan/pathfinding-visualizer",
-    image: "/images/pathfinder.gif",
-    live: true,
-  },
-  {
-    id: 4,
-    title: "VeriCreds",
-    description: "PoC web3 document sharing app created for UPenn Hackathon",
-    technologies: [
-      "React",
-      "Next.js",
-      "Redux",
-      "Axios",
-      "PyMongo",
-      "Flask",
-      "Postman",
-    ],
-    github: "https://github.com/shlomomdahan/VeriCreds",
-    image: "/images/vericreds.jpg",
-    link: "https://devpost.com/software/vericreds",
-    live: false,
-  },
+
   {
     id: 1,
     title: "shlomodahan.com",
