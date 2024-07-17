@@ -11,6 +11,16 @@ interface Project {
 
 export const projectsData: ReadonlyArray<Project> = [
   {
+    id: 8,
+    title: "Jenkins Infra Statistics UI",
+    description: "Developed UI for Jenkins Infra Statistics as part of GSoC 2024",
+    technologies: ["React", "TypeScript", "ECharts", "Material-UI"],
+    github: "https://github.com/jenkins-infra/stats.jenkins.io",
+    image: "/images/landing_page_jenkins.png",
+    link: "https://new.stats.jenkins.io",
+    live: true,
+  },
+  {
     id: 3,
     title: "Pathfinding Visualizer",
     description: "A web app that visualizes pathfinding algorithms",
@@ -88,8 +98,16 @@ interface Experience {
   readonly description: string;
   readonly image?: string;
 }
-
 export const experienceData: ReadonlyArray<Experience> = [
+  {
+    id: 4,
+    title: "Google Summer of Code",
+    company: "Jenkins",
+    date: "2024 - Present",
+    description:
+      "Working on the project 'Implementing UI for Jenkins Infra Statistics' as part of Google Summer of Code.",
+    image: "/images/GSOC_jenkins.png",
+  },
   {
     id: 1,
     title: "CS",
@@ -113,7 +131,8 @@ export const experienceData: ReadonlyArray<Experience> = [
     title: "Student",
     company: "University of Miami",
     date: "2015-2019",
-    description: "Stuidied Finance and Accounting at the University of Miami.",
+    description: "Studied Finance and Accounting at the University of Miami.",
     image: "/images/um.jpg",
   },
+ 
 ] as const;
