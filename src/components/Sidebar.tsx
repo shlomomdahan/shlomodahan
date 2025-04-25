@@ -25,13 +25,13 @@ export const Sidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="px-6  z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
+            className="px-6 z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit fixed lg:relative h-screen left-0 flex flex-col"
           >
-            <div className="flex-1 overflow-auto">
+            <div className="flex-1 overflow-y-auto">
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
+            <div className="mt-auto pt-4">
               <Badge href="/Shlomo_Dahan_2024.pdf" text="View Resume" />
             </div>
           </motion.div>
