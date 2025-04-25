@@ -1,62 +1,73 @@
 export const timeline = [
   {
-    company: "Amazon",
-    title: "Senior Software Engineer",
-    date: "2022 - Present",
-    description: "Building the future of e-commerce",
+    company: "American Dream",
+    title: "Full Stack Developer",
+    date: "2024 – Present",
+    description:
+      "Developer for North America's largest retail and entertainment center.",
     responsibilities: [
-      "Developed a new feature that improves the shopping experience",
-      "Implemented a recommendation algorithm to suggest products",
-      "Enhanced the checkout process making it more intuitive and user-friendly",
-      "Built a feature for tracking packages in real-time",
+      "Contributed to projects enhancing the digital experience for one of America's largest retail and entertainment destinations.",
+      "Redesigned high-traffic landing pages to improve user engagement and accessibility.",
+      "Built automation tools to streamline internal operations and customer service workflows.",
+      "Integrated and modernized internal management systems to support operational efficiency.",
     ],
   },
   {
-    company: "Google",
-    title: "Senior Software Engineer",
-    date: "2021 - 2022",
-    description: "Building the future of search",
+    company: "The Linux Foundation - Jenkins CSP Project",
+    title: "Software Engineer Contractor",
+    date: "Sep 2024 – Dec 2024",
+    description:
+      "Led security modernization efforts for Jenkins as part of the Alpha Omega initiative.",
     responsibilities: [
-      "Improved the search algorithm to provide more relevant results",
-      "Developed a new feature that personalizes search results",
-      "Enhanced the search functionality making it more intuitive and user-friendly",
-      "Implemented a feature for tracking search history",
+      "Implemented Content Security Policy (CSP) across Jenkins core and top plugins to mitigate XSS vulnerabilities.",
+      "Refactored legacy codebases to remove inline scripts, unsafe event handlers, and legacy validations.",
+      "Collaborated with the Jenkins core team to ensure secure, backward-compatible updates.",
     ],
   },
   {
-    company: "Facebook",
-    title: "Senior Software Engineer",
-    date: "2020 - 2021",
-    description: "Building the future of social networking",
+    company: "Jenkins (Google Summer of Code 2024)",
+    title: "Contributor",
+    date: "May 2024 – Sep 2024",
+    description:
+      "Developed a new user interface for Jenkins Infra Statistics as part of GSoC 2024.",
     responsibilities: [
-      "Developed a new feature that improves the user experience",
-      "Implemented a recommendation algorithm to suggest friends",
-      "Enhanced the news feed algorithm to show more relevant posts",
-      "Built a feature for tracking user activity",
+      "Built React and TypeScript-based UI components for real-time data visualization.",
+      "Enhanced data accessibility and usability for Jenkins Infra Statistics users.",
+      "Worked closely with Jenkins mentors to align contributions with project standards and goals.",
+    ],
+  },
+
+  {
+    company: "University of Pennsylvania",
+    title: "Master of Computer & Information Technology (MCIT) Student",
+    date: "Jan 2023 – Dec 2024",
+    description:
+      "Pursuing Master’s degree in Computer Science with a focus on software engineering and systems.",
+    responsibilities: [
+      "Completed coursework in algorithms, software engineering, and computer systems.",
     ],
   },
   {
-    company: "Apple",
-    title: "Senior Software Engineer",
-    date: "2019 - 2020",
-    description: "Building the future of technology",
+    company: "J.P. Morgan Chase & Co",
+    title: "Private Banking Analyst",
+    date: "June 2018 – July 2022",
+    description:
+      "Supported UHNW client portfolio management and strategic growth initiatives.",
     responsibilities: [
-      "Improved the iOS operating system to enhance user experience",
-      "Developed a new feature that personalizes user interface",
-      "Enhanced the app store algorithm to suggest more relevant apps",
-      "Implemented a feature for tracking app usage",
+      "Assisted private bankers with portfolio analysis, investment strategies, and market research.",
+      "Strengthened client relationships through customized financial solutions.",
+      "Contributed to portfolio expansion and retention efforts across diverse client segments.",
     ],
   },
   {
-    company: "Microsoft",
-    title: "Senior Software Engineer",
-    date: "2018 - 2019",
-    description: "Building the future of software",
+    company: "University of Miami",
+    title: "Bachelor of Business Administration (Finance, Minor in Accounting)",
+    date: "Aug 2015 – Dec 2018",
+    description:
+      "Completed undergraduate studies focused on Finance and Accounting principles.",
     responsibilities: [
-      "Improved the Windows operating system to enhance user experience",
-      "Developed a new feature that personalizes user interface",
-      "Enhanced the office suite to improve productivity",
-      "Implemented a feature for tracking software usage",
+      "Completed coursework in corporate finance, accounting, and investment analysis.",
+      "Built a foundation in financial modeling, budgeting, and reporting.",
     ],
   },
 ];

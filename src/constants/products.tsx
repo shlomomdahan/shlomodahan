@@ -17,7 +17,7 @@ export const products = [
     href: "https://www.americandream.com",
     title: "American Dream Fullstack Developer",
     description:
-      "Developer for North America's largest retail and entertainment center",
+      "Developer for North America's largest retail and entertainment center.",
     thumbnail: ad_homepage,
     images: [ad_homepage, ad_events, ad_luxury],
     stack: ["React", "JavaScript", "Node.js", "AWS"],
