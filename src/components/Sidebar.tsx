@@ -31,7 +31,7 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div className="mt-auto pt-4">
+            <div className="mt-auto pt-4 pb-20 lg:pb-4">
               <Badge href="/Shlomo_Dahan_2024.pdf" text="View Resume" />
             </div>
           </motion.div>
