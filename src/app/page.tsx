@@ -21,25 +21,6 @@ export default function Home() {
         </a>
         .
       </Paragraph>
-      {/* <Paragraph className="max-w-xl mt-4 md:hidden">
-          You can download my resume{" "}
-          <a
-            href="/Shlomo_Dahan_2024.pdf"
-            className="text-primary hover:text-primary/80 underline underline-offset-4"
-          >
-            here
-          </a>
-          .
-        </Paragraph> */}
-
-      {/* <Heading
-          as="h2"
-          className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
-        >
-          What I&apos;ve been working on
-        </Heading>
-        <Products />
-        <TechStack /> */}
 
       <div className="flex space-x-4 mt-6">
         {socials.map((social) => (
