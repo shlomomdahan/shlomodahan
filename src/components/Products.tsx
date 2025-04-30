@@ -33,9 +33,9 @@ export const Products = () => {
               <Image
                 src={product.thumbnail}
                 alt="thumbnail"
-                height="200"
-                width="200"
-                className="rounded-md"
+                height={200}
+                width={200}
+                className="rounded-md object-cover w-[200px] h-[120px] md:w-[250px] md:h-[150px]"
               />
               <div className="flex flex-col justify-between">
                 <div>

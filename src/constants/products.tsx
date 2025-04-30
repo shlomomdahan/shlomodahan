@@ -10,12 +10,42 @@ import vericredsImage from "public/images/vericreds.jpg";
 import sortingVisualizerImage from "public/images/sort.gif";
 import gameOfLifeImage from "public/images/life.gif";
 import networkSimulatorImage from "public/images/ns-3.png";
-import worldEditorImage from "public/images/world.png";
+import cleanshotDemo from "public/images/cleanshot-demo.gif";
+import CommandLine from "../components/CommandLine";
 
 export const products = [
   {
+    href: "https://github.com/shlomomdahan/cleanshot",
+    title: "cleanshot",
+    description:
+      "A macOS utility that automatically renames screenshots using OpenAI.",
+    thumbnail: cleanshotDemo,
+    images: [cleanshotDemo],
+    stack: ["Python", "OpenAI API", "macOS", "pypi"],
+    slug: "cleanshot",
+    github: "https://github.com/shlomomdahan/cleanshot",
+    live: true,
+    content: (
+      <div>
+        <CommandLine
+          commands={["pip install cleanshot", "cleanshot"]}
+          className="my-4"
+          autoType={true}
+          typeSpeed={80}
+        />
+        <p>
+          This CLI-based tool is built with Python and uses the{" "}
+          <code>argparse</code> module for command-line interaction,{" "}
+          <code>watchdog</code> for filesystem monitoring, and the{" "}
+          <code>rich</code> library for polished terminal output. Designed to
+          run seamlessly in the background.
+        </p>
+      </div>
+    ),
+  },
+  {
     href: "https://www.americandream.com",
-    title: "American Dream Fullstack Developer",
+    title: "American Dream Fullstack Engineer",
     description:
       "Developer for North America's largest retail and entertainment center.",
     thumbnail: ad_homepage,
